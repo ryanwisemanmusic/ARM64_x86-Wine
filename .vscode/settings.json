@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "storagetypes.h": "c",
+        "memory.h": "c",
+        "fetch.h": "c"
+    }
+}
