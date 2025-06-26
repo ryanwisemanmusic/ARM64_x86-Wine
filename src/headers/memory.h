@@ -16,3 +16,4 @@ uint8_t   mem_read8(uint16_t seg, uint16_t off);
 uint16_t  mem_read16(uint16_t seg, uint16_t off);
 void      mem_write8(uint16_t seg, uint16_t off, uint8_t v);
 void      mem_write16(uint16_t seg, uint16_t off, uint16_t v);
+void      mem_init(void);

@@ -1,6 +1,7 @@
 #include "../headers/fetch.h"
 #include "../headers/memory.h"
 #include "../headers/storageTypes.h"
+#include "../headers/registers.h"
 
 void decode_and_execute(void)
 {
@@ -29,7 +30,8 @@ void decode_and_execute(void)
 
 void emulator_run(const char *com_image_path)
 {
-    memory_init();
+    (void)com_image_path;
+    mem_init();
     cpu.CS = 0x0000;
     cpu.IP = 0x0100;
     while (1)

@@ -26,7 +26,7 @@ uint8_t mem_read8(uint16_t seg, uint16_t off)
     return RAM[linear_addr(seg, off)];
 }
 
-uint16_t memread16(uint16_t seg, uint16_t off)
+uint16_t mem_read16(uint16_t seg, uint16_t off)
 {
     uint32_t a = linear_addr(seg, off);
     return RAM[a] | (RAM[a + 1] << 8);
