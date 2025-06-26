@@ -3,7 +3,7 @@ AS = as
 LD = ld
 CFLAGS = -Wall -Wextra -O2 -I./src/headers
 ASFLAGS = -arch arm64
-LDFLAGS = -static
+LDFLAGS = -Wl,-e,_start
 
 # Directories
 SRC_DIR = src
