@@ -2,11 +2,11 @@
 #include "../headers/memory.h"
 #include "../headers/storageTypes.h"
 #include "../headers/registers.h"
+#include "../headers/JITCompiler.h"
 
 void decode_and_execute(void)
 {
     uint8_t opcode = fetch_byte();
-
     if ((opcode & 0xF0) == 0xB0)
     {
         int reg_lo = opcode & 0x07;
